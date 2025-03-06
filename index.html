@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di SMKN 40 JAKARTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset CSS */
+        body, h1, h2, p, ul, li, a, div, section {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f6fa; /* Latar belakang dashboard */
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #4c6ef5; /* Warna ungu header */
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            font-weight: 300;
+            color: #e0e0e0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 0 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50; /* Warna tombol hijau */
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .btn:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+        }
+
+        .info {
+            padding: 40px 20px;
+        }
+
+        .info h2 {
+            font-size: 1.8em;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4c6ef5;
+            padding-bottom: 10px;
+        }
+
+        .info p {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .info ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .info ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+            color: #666;
+        }
+
+        .info ul li:before {
+            content: '\f00c'; /* Font Awesome checkmark */
+            font-family: FontAwesome;
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .buttons {
+                flex-direction: column;
+                padding: 20px 10px;
+            }
+
+            .btn {
+                margin: 10px 0;
+                padding: 10px 20px;
+                max-width: 100%;
+            }
+
+            .info {
+                padding: 30px 15px;
+            }
+
+            .info h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selamat Datang di SMKN 40 JAKARTA</h1>
+            <p>Platform absensi digital untuk kemudahan dan keakuratan data kehadiran.</p>
+        </header>
+        <section class="buttons">
+            <a href="loginsiswa.php" class="btn">
+                <i class="fas fa-sign-in-alt"></i> Login Siswa
+            </a>
+            <a href="login.php" class="btn">
+                <i class="fas fa-sign-in-alt"></i> Login Admin
+            </a>
+            <a href="loginguru.php" class="btn">
+                <i class="fas fa-sign-in-alt"></i> Login Guru
+            </a>
+        </section>
+        <section class="info">
+            <h2>Tentang Aplikasi Absensi</h2>
+            <p>Aplikasi absensi ini dirancang untuk membantu sekolah dalam mencatat kehadiran siswa secara digital. Dengan fitur-fitur canggih, aplikasi ini memastikan keakuratan data dan memudahkan rekapitulasi kehadiran.</p>
+            <ul>
+                <li>Absensi real-time dengan akurasi tinggi</li>
+                <li>Data tersimpan secara aman dan dapat diakses kapan saja</li>
+                <li>Dashboard interaktif untuk monitoring kehadiran</li>
+                <li>Fitur laporan otomatis untuk kemudahan analisis data</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
